@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="txt" type="text" value="">
+	<input id="btn" type="button" value="lalala">
+</body>
+</html>
+<script>
+	var oTxt = document.getElementById('txt');
+	var oBtn = document.getElementById('btn');
+	oBtn.onclick = function(){
+		oTxt.value = oBtn.value;
+	}
+</script>
+<!-- 点击按钮后输入把内显示按钮的值 -->

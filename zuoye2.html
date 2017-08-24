@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="txt" type="text" value="">
+	<input id="btn" type="button" value="确认">
+	<img id="img" src="img/1.jpg" height="551" width="439" alt="">
+</body>
+</html>
+<script>
+	var oTxt = document.getElementById('txt');
+	var oBtn = document.getElementById('btn');
+	var oImg = document.getElementById('img');
+	oBtn.onclick = function(){
+		oImg.src = oTxt.value;
+		// 让图片的路径等于输入框里输入的值
+	}
+</script>
+<!-- 在输入框写img里其他的图片路径点确定按钮后图片变化 -->

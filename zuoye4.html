@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		window.onload = function(){
+		// 先元素后执行
+			var oDiv = document.getElementById('div');
+			oDiv.innerHTML = "<"+"strong"+">"+"hello word"+"</"+"strong"+">";
+			// 覆盖div里的内容  标签必须分开写用双引号然后用+链接 加粗的字体		
+		}
+	</script>
+	<!-- 还可以写成
+	<script>
+		var oDiv1 = document.getElementById("div1");
+		alert(oDiv1.innerHTML);
+	</script> -->
+</head>
+<body>
+	<div id="div">
+        <p>标签里面的内容</p>
+    </div>
+</body>
+</html>
